@@ -1,0 +1,47 @@
+creating use:
+create user username identified by password;
+
+change password:
+alter user username identified by newpassword;
+
+drop user(deleting permantly)
+drop user username cascade;
+
+create user vasanth identified by vasanth;
+DCL:(data control language)
+-------------
+grant and revoke
+grant -> giving privilage to the user
+revoke-> revoke privilage from user
+
+grant connect,resource to username
+
+conn vasanth/vasanth:for connection we can use this also
+
+
+DDL(data definition language)
+------------------------
+->create
+->alter
+->drop
+->truncate:used to delete the data(rows and columns)fromtable(not the table,table will remains)
+
+DDL commands automatically committed(save)
+DML(Data manipulation language)
+--------------------------------------
+insert
+update
+deletenote:DML commands not saved automatically you must commit the work
+
+TCL(Transaction control language)
+-----------------------------------
+unit of work is called as transaction
+commit->used to save the changes permanently
+rollback->undo the changes
+savepoint->used to save the work temporarly(later decide commit/rollback)
+
+Data retrieval commands----------------
+select
+
+command to view the structure of the table
+desc tablename;
