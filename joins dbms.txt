@@ -1,0 +1,35 @@
+non-equi join
+-----------------------
+select empdata and salary grade;
+empno,ename,sal,grade
+select empno,ename,sal,grade from emp,salgrade where emp.sal between salgrade.losal and salgrade.hisal;
+
+
+LEFT OUTER JOIN
+--------------
+old(before oracle 9i)
+select columnlist from lefttable,rtable where ltable.column=rtable.column(+)
+
+
+ANSI
+select clolumnlist from ltable LEFT[OUTER] JOIN rtable on condition
+
+
+display employee details and dname,condition is employee working in the dept or not,display all dept and employee datails
+
+OLD:
+--------------
+select empno,ename,sal,dname from dept d,emp e where d.deptno=e.deptno(+);
+
+
+RIGHT OUTER JOIN
+====================
+select empno,ename,sal,dname from dept d right join emp e on d.deptno=e.deptnossss;
+
+
+
+1 create table orderdetail(orderid number(7)
+2 primary key,cid number(5)
+3 orderdate date default sysdate,
+4 constraint order_fk foreign key(cid)
+references customer(cid));
