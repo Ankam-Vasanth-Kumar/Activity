@@ -1,0 +1,18 @@
+JDBC DRIVER -enables interaction with the database
+1.Type1.JDBC-ODBC bridge driver(removed in JDK 1.8)
+2.Type2.Partly native Java DRIVER
+3.Type3.network protocol driver
+4.Type4.pure java native protocol driver
+-these drivers are written purely in java
+-these drivers are provided by vendors
+=======================================================
+steps for connecting with DB
+1.Load the Driver class or register the driver class
+2.Establish connection with the DB (using DriverManager.getConnection)
+3.create statements objects
+    -is used to fire SQL queries
+	
+4.create Results Object
+  -to navigate table records
+5.Process the result
+6.close the connectionURL-jdbc:oracle:thin:@hostname:1521:XE  
