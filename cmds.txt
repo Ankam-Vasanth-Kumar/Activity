@@ -1,0 +1,52 @@
+cmds:
+ng new projectname
+install json file:  npm install -g json-server
+
+
+
+
+==>ng serve
+
+
+npm install bootstrap@latest jquery --save
+==>open angular.json file:update line no 26
+--------------------------------
+==========for project=============
+"styles": [
+              "src/styles.css",
+            "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+=====================================================================
+-----------------------JSON Commands ----------------------------------------------
+install json file : npm install -g json -server
+run the json file : json-server --watch db.json
+default port is 3000 : json-server --watch db.json --port 3002
+giving Authorization:  ng g  guard Auth
+login:   ng g c login
+
+
+
+
+promise							Observable
+------------------------------------------------------------------------------------------------------------------------------
+Emits a single value 					emits multiple values over a period of time 
+
+Not Lazy 						Lazy.it si not called until wesubscribe to the observable
+
+can not be called 					can be cancelled using unsubscribe()
+
+							Observable provides operators like map,forEach,filter,reduce,retry,retryWhen, etc.....
+
+	
+-----------------------------------------------------------------------
+ng g directive name
+
+ng g pipe name
+
+
+
